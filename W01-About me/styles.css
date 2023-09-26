@@ -1,0 +1,36 @@
+body{
+    background-color: #C8C6D7;
+    align-content: center;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    font-family: arial;
+
+}
+
+
+.conteiner { 
+    background-color: #fff;
+    border-radius:25px;
+    width: 700px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
