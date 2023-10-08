@@ -43,13 +43,13 @@ header{
     margin: 0 auto;
 }
 
-h4 { 
+h4 {
     font-size: 100%;
 }
 
 #background {
     height: 725px;
-    background-color: ;
+    background-color: grey;
 }
 
 .book, .join {
