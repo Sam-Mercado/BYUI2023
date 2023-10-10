@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Roboto:ital@1&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -6,12 +8,25 @@
 #hero-img{
     width: 100%;
 }
+
+#navegation{
+    margin: 0 auto;
+}
+
+header {
+    height:100px ;
+    display: flex;
+    align-items: center;
+
+}
+
+
 nav a {
     color: white;
-    text-align: center;
     text-decoration: none;
     font-size: 1.2em;
-    margin: 20px 10px;
+    margin: 20px 50px; 
+    
 }
 
 nav a:hover{
@@ -23,9 +38,18 @@ nav a:hover{
     text-align: center;
 }
 
-.button-box{
-    text-align: center;
+h1{
+    font-family:'Lato','Golos', 'Roboto','Helvetica Neue', sans-serif;
+    background-color: #EDF2F4;
+    width: 100%;
 }
+
+h2, h4{
+    font-family:'Lato','Golos', 'Roboto','Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 00;
+}
+
 
 main section{
     text-align: center;
@@ -45,40 +69,101 @@ header{
 
 h4 {
     font-size: 100%;
+    margin-top: 20px 10px;
 }
+
+.camping-card{
+    margin-top: 20px;
+    margin-bottom: 15px;  
+}
+
+.img_sec{
+    max-width: 300px ;
+    /**background-color: #8D99AE;*/
+    padding: 0 20px;
+}
+
+.offer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-img{
+    width: 290px;
+    height: auto;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: hsl(235, 21%, 21%);
+}
+
 
 #background {
-    height: 725px;
-    background-color: grey;
+    height: 100px;
+    background-color:#EDF2F4;
 }
 
-.book, .join {
-    background-color: #8D99AE;
+
+.book, button{
+    background-color: #EDF2F4;
     color: black;
-    margin:0 auto;
+    width: 30%;
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
     
 }
-.book:hover, .join:hover {
+
+.join{
+    background-color: #fff;
+    color: black;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.book:hover,  button:hover {
     background-color: #2B2D42;
     color: #fff;
 }
+
+.join:hover{
+    background-color: #2B2D42;
+    color: #fff;
+    
+}
+
+.mountains{
+    width: 100%;
+    height: 20%;
+}
+
 .msg{ 
-    background-color: #2B2D42;
+    background-color: #EDF2F4;
+    height: 200px;
+    padding: 20px;
 }
-.msg h2 {
-     color: #fff;
+.msg h2 p{
+     color: #000;
 }
-.msg p {
-    color: #fff;
-}
+
 
 footer{ 
     background-color: #2B2D42;
     color: #EDF2F4;
+    padding: 20px;
     
     
 }
@@ -100,4 +185,11 @@ footer a:hover{
 
 .icon, .logo {
     width: 80px;
+    margin: 10px 20px;
+    padding: 5px;
+}
+
+.social img{
+    border-radius: 50px;
+    padding: 5px;
 }
