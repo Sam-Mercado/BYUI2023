@@ -44,10 +44,10 @@ h1{
     width: 100%;
 }
 
-h2, h4{
+h2, h4, p{
     font-family:'Lato','Golos', 'Roboto','Helvetica Neue', sans-serif;
     font-style: italic;
-    font-weight: 00;
+    font-weight: 200;
 }
 
 
