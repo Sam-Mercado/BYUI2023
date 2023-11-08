@@ -1,0 +1,86 @@
+:root{
+    --primary-color: #D8F0F0  ;
+    --secondary-color: #748A8A ;
+    --accent1-color: #475C5C;
+    --accent2-color: #1D3131;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*nav bar*/
+.sidebar{
+    box-shadow: 0px 10px 10px 5px var(--accent1-color);
+}
+.bg_navbar .sidebar{
+    position: fixed;
+    background-color: var(--accent2-color);
+    width: 20%;
+    height: 100%;
+    padding: 30px;
+}
+
+.nav_img{
+    width: 70%;
+    display: flex;
+    margin: auto auto;
+    border-radius: 50%;
+    
+}
+
+
+a, h3, ul{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+
+}
+
+.list_icon {
+    margin: 0 15px;
+}
+
+i{
+    margin: 8px;
+}
+
+a, li{
+    padding: 10px;
+    
+}
+
+li:hover, a:hover{
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+ul{
+    margin-top: 20px;
+}
+
+.my_work, .content_info {
+    margin: 20 auto;
+    padding-top: 30px;
+    
+}
+
+.social{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.social .social_i.fa-brands:hover{
+    font-weight: bold;
+    font-size: 38px;
+    color: #1D3131;
+    
+}
+
