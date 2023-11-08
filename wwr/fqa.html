@@ -65,31 +65,7 @@
                 <div class="panel">
                     <p>If you have specific dates you need, we recommend booking a year in advance. If you can be more flexible 6 months in advance is usually sufficient.</p>
                 </div>
-                <style>
-                    .panel {
-                    padding: 0 18px;
-                    background-color: white;
-                    max-height: 400px;
-                    overflow: hidden;
-                    transition: max-height 0.2s ease-out;
-                    }
-                </style>
-                <script>
-                    var acc = document.getElementsByClassName("accordion");
-                    var i;
-                    
-                    for (i = 0; i < acc.length; i++) {
-                    acc[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var panel = this.nextElementSibling;
-                        if (panel.style.display === "block") {
-                        panel.style.display = "none";
-                        } else {
-                        panel.style.display = "block";
-                        }
-                    });
-                    }
-                </script>
+                <script src="effects.js"></script>
             </div>
     </section>
    
