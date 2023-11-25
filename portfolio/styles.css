@@ -12,9 +12,8 @@
     text-decoration: none;
     list-style: none;
 }
-
-
 /*nav bar*/
+
 .sidebar{
     box-shadow: 0px 10px 10px 5px var(--accent1-color);
 }
@@ -31,6 +30,8 @@
     display: flex;
     margin: auto auto;
     border-radius: 50%;
+    border: solid white;
+    
     
 }
 
@@ -54,7 +55,7 @@ a, li{
     
 }
 
-li:hover, a:hover{
+.bg_navbar li:hover, .bg_navbar a:hover{
     background-color: var(--secondary-color);
     color: var(--accent2-color);
 }
@@ -83,33 +84,225 @@ ul{
     
 }
 
+/*FOoter*/
+
+footer{
+    height: 80px;
+    margin-top: 0;
+    padding-top: 20px;
+    background-color: var(--accent2-color);
+    color: white;
+    text-align: center;
+    
+}
+
+footer .siteplan{
+    color: white;
+    
+    }
+
+/*hero portfolio about me content*/
+
 .main{
-    margin-left:25%;
-    margin-right: 5%;
+    margin-left:20%;
+    margin-right: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main h2 {
     margin-top: 30px;
 }
 
-.invisible{
-    height: 50px;
+.hero-portfolio{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(5, 20%);
 }
 
-.education_certificate{
+.img-hero-logo{
+    width: 400px;
+    height: 70px;
+    margin-top: 50px;
+    grid-column: 4/8;
+    grid-row: 2/3;
+}
+
+
+.p-aboutme{
+    width: 700px;
+    height: auto;
+    margin: 60px 50px;
+    text-align: center;
+    grid-column: 2/10;
+    grid-row: 3/5;
+}
+
+.button-aboutme{
     display: flex;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color:#149a45;
+    color: white;
+    height: 50px;
+    width: 155px; 
+    margin: 75px 20px;
+    border: solid #000;
+    border-radius: 20px;
+    grid-column: 5/7;
+    grid-row: 4/5;
+}
+
+
+
+.button-aboutme:hover{
+    background-color:  #25D366;
+    color: white;
+    height: 50px;
+    width: 152px; 
+    border: solid var(--accent2-color);
+    border-radius: 20px;
+    transition: 0.2s;
+    box-shadow: -2px 2px var(--accent2-color);
+}
+
+.education{
+    background-color: var(--secondary-color);
+    color: white;
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.certificate h2, .education h2{ 
+    font-size: 28px;
+    margin-top: 80px;
+    grid-column: 2/9;
+    grid-row: 1/2;
+    
+}
+.pathway{
+    grid-column: 2/9;
+    grid-row: 2/3;
+}
+.byui{
+    grid-column: 2/9;
+    grid-row: 3/4;
+}
+/* hover fro certificate and education*/
+.education_certificate a:hover{
+    color:var(--primary-color);
+    text-shadow: -2px 2px var(--accent2-color);
+    transform: rotate(20deg);
+}
+/* grid for each certificate/education*/
+.education_certificate{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 800px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 70px 770px;
+    grid-template-rows: repeat(2,40px);
 }
 
 .education_certificate img{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
+    margin-top: 5px;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .education_certificate h4{
-    margin-left: 20px;
+    font-size: 20px;
+    margin: 10px 15px;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
+
+.education_certificate p{
+    margin-left: 20px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.education_certificate img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: solid white;
+}
+
+/* certificate - ABOUT ME */
+
+.certificate{
+    background-color: var(--accent1-color);
+    color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+
+.c1{
+    grid-column: 2/9;
+    grid-row: 2/3;
+}
+
+.c2{
+    grid-column: 2/9;
+    grid-row: 3/4;
+}
+
+.c3{
+    grid-column: 2/9;
+    grid-row: 4/5;
+}
+
+.c4{
+    grid-column: 2/9;
+    grid-row: 5/6;
+}
+
+.c5{
+    grid-column: 2/9;
+    grid-row: 6/7;
+}
+
+.c6{
+    grid-column: 2/9;
+    grid-row: 7/8;
+}
+
+.c7{
+    grid-column: 2/9;
+    grid-row: 8/9;
+}
+
+.c8{
+    grid-column: 2/9;
+    grid-row: 9/10;
+}
+
+.c9{
+    grid-column: 2/9;
+    grid-row: 10/11;
+}
+
+.c10{
+    grid-column: 2/9;
+    grid-row: 11/12;
+}
+
+
+/********************************************************/
 
 .content_box{
     margin-top: 50px;
@@ -191,7 +384,6 @@ ul{
     margin-left: 300px;
     margin-top: 100px;
 }
-
 
 
 
