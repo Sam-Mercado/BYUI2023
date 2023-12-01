@@ -43,32 +43,179 @@
                 </div>
             </div>
     </header>
-    <div class="main">
-        <div >
-            <h2 style="margin-top: 0;" >UX UI</h2>
-        <div class="content_box">
-            <div class="img_box">
-                <img  src="images/mockup Art david gallery website.jpg" alt="">
+    <div class="main ">
+        <div class="uxui">
+            <div class="title">
+                <h2 style="margin-top: 0;" >UX UI</h2>
+                <h4>Some practices:</h4>
             </div>
-            <div class="text_box">
-                <h4>ART David</h4>
-                <p>This is a personal page design for an artist</p>
-            </div>
-            <button class="button1">figma</button>
-            <button class="button2">see prototype</button>
-        </div>
+            
+            <div class="slideshow-container">
 
-        <div class="content_box">
-            <div class="img_box">
-                <img  src="images/Wireframe - 1.jpg" alt="">
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="images/ux ui/Day 1.png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="images/ux ui/day 2.png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="images/ux ui/Group 45.png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/ux ui/day 5.png" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/ux ui/modern vintage.png" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                               
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/ux ui/mortry.png" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+
+        
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+              </div>
+
+              <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                
+                </script>
+
+            <div class="title">
+                <h4>Projects:</h4>
             </div>
-            <div class="text_box">
-                <h4>Movie WebApp</h4>
-                <p>Here is one of my ricent designs, a movie web app, where you can buy tickets online while seen what movies are in premier</p>
-            </div>
-            <button class="button1">figma</button>
-            <button class="button2">see prototype</button>
-        </div> 
+
+                <div class="content_box">
+                    <div class="img_box">
+                        <img  src="images/Wireframe - 1.jpg" alt="">
+                    </div>
+                    <div class="text_box">
+                        <h4>Cinema Web App</h4>
+                        <p>This project aimed to streamline and enhance the movie theater ticket purchasing process.</p>
+                    </div>
+                    
+                    <button class="button2"><img src="images/ux ui/computer-outline.png" alt="code icon">
+                        <p>
+                            <a href="https://www.figma.com/proto/OvSHlf0spVKQE4CJ5ID7tW/Art_David?page-id=0%3A1&type=design&node-id=407-43&viewport=417%2C114%2C0.02&t=SqCcEIGLTH6f0u1o-1&scaling=contain&starting-point-node-id=407%3A43&mode=design" target="_blank">
+                                prototype
+                            </a>
+                        </p>
+                    </button>
+                    <button class="button1"><img src="images/ux ui/devicon_figma.png" alt="github icon">
+                        <p>
+                            <a href="https://www.figma.com/file/I1dZ9kJU8YtkIQARKzV8RJ/movie-web-app?type=design&node-id=179%3A498&mode=design&t=xa5KQ334u91cxueB-1" target="_blank">
+                                figma
+                            </a> 
+                        </p>
+                    </button>
+                </div>
+
+                <div class="content_box">
+                    <div class="img_box">
+                        <img  src="images/ux ui/Frame 17.png" alt="coffeweb mockup">
+                    </div>
+                    <div class="text_box">
+                        <h4>CoffeShop Movile App</h4>
+                        <p>This coffee shop app is all about making your order quickly and easily. Just tap away for a faster ordering experience</p>
+                    </div>
+                    
+                    <button class="button2"><img src="images/ux ui/computer-outline.png" alt="code icon">
+                        <p>
+                            <a href="https://www.figma.com/proto/I1dZ9kJU8YtkIQARKzV8RJ/movie-web-app?page-id=179%3A498&type=design&node-id=179-2186&viewport=1311%2C1312%2C0.18&t=lZuoKlRkKX56uCCj-1&scaling=contain&starting-point-node-id=179%3A2186&show-proto-sidebar=1&mode=design" target="_blank">
+                                prototype
+                            </a>
+                        </p>
+                    </button>
+                    <button class="button1"><img src="images/ux ui/devicon_figma.png" alt="github icon">
+                        <p>
+                            <a href="https://www.figma.com/file/n9wGiakAfXGn7FRiSD0HLV/CoffeeHouse?type=design&node-id=248%3A94&mode=design&t=ptyR74Ohq2OcHsWX-1" target="_blank">
+                                figma
+                            </a> 
+                        </p>
+                    </button>
+                </div>
+
+                <div class="content_box">
+                    <div class="img_box">
+                        <img  src="images/ux ui/artwebsite.png" alt="art web">
+                    </div>
+                    <div class="text_box">
+                        <h4>Artist Website</h4>
+                        <p>I design this website to help an artist showcase and promote their work, serving as a versatile portfolio.</p>
+                    </div>
+                    
+                    <button class="button2"><img src="images/ux ui/computer-outline.png" alt="code icon">
+                        <p>
+                            <a href="https://www.figma.com/proto/OvSHlf0spVKQE4CJ5ID7tW/Art_David?page-id=0%3A1&type=design&node-id=407-43&viewport=417%2C114%2C0.02&t=SqCcEIGLTH6f0u1o-1&scaling=contain&starting-point-node-id=407%3A43&mode=design" target="_blank">
+                                prototype
+                            </a>
+                        </p>
+                    </button>
+                    <button class="button1"><img src="images/ux ui/devicon_figma.png" alt="github icon">
+                        <p>
+                            <a href="https://www.figma.com/file/OvSHlf0spVKQE4CJ5ID7tW/Art_David?type=design&node-id=0%3A1&mode=design&t=ojG6sbc5oGCem2Zz-1" target="_blank">
+                                figma
+                            </a> 
+                        </p>
+                    </button>
+                </div>
+        
+        
         </div>
         
        
